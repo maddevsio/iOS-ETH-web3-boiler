@@ -20,7 +20,7 @@ extension Module {
         
         fileprivate func setupUI() {
             view.backgroundColor = UIColor.white
-            navigationItem.title = Localization.Debugging.title
+            navigationItem.title = "Debug screen"
         }
         
         fileprivate func setupConstraints() {

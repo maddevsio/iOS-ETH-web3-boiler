@@ -43,7 +43,7 @@ open class BaseViewController: UIViewController, BaseViewInput {
             alert.addAction(action)
         }
         if cancellable {
-            let cancel = UIAlertAction.init(title: Localization.Common.close, style: .default, handler: nil)
+            let cancel = UIAlertAction.init(title: "Close", style: .default, handler: nil)
             alert.addAction(cancel)
         }
         present(alert, animated: true, completion: nil)

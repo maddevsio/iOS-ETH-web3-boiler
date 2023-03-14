@@ -31,8 +31,6 @@
 		E96896D828FE92E400048E5D /* CollectionsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96896D728FE92E400048E5D /* CollectionsExtension.swift */; };
 		E968974128FECF3500048E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E968974028FECF3500048E5D /* LaunchScreen.storyboard */; };
 		E96E48852987D5290037F9CB /* TorusWeb3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E48842987D5290037F9CB /* TorusWeb3Utils.swift */; };
-		E988C24B29016576002E5EB3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E988C24D29016576002E5EB3 /* Localizable.strings */; };
-		E988C25329016986002E5EB3 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988C25129016986002E5EB3 /* Localization.swift */; };
 		E98A98A529781A4B00A2893B /* Approve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A98A429781A4B00A2893B /* Approve.swift */; };
 		E98A98A729781A5200A2893B /* Allowance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A98A629781A5200A2893B /* Allowance.swift */; };
 		E98A98A929781A5A00A2893B /* TransferFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A98A829781A5A00A2893B /* TransferFrom.swift */; };
@@ -116,8 +114,6 @@
 		E968974028FECF3500048E5D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96E48842987D5290037F9CB /* TorusWeb3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorusWeb3Utils.swift; sourceTree = "<group>"; };
 		E97FC7722902E05F002428B1 /* Environment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Environment.xcconfig; sourceTree = "<group>"; };
-		E988C24C29016576002E5EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E988C25129016986002E5EB3 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		E98A98A429781A4B00A2893B /* Approve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approve.swift; sourceTree = "<group>"; };
 		E98A98A629781A5200A2893B /* Allowance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allowance.swift; sourceTree = "<group>"; };
 		E98A98A829781A5A00A2893B /* TransferFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFrom.swift; sourceTree = "<group>"; };
@@ -295,14 +291,6 @@
 				E97FC7722902E05F002428B1 /* Environment.xcconfig */,
 			);
 			path = Environment;
-			sourceTree = "<group>";
-		};
-		E988C25029016912002E5EB3 /* SwiftGenResources */ = {
-			isa = PBXGroup;
-			children = (
-				E988C25129016986002E5EB3 /* Localization.swift */,
-			);
-			path = SwiftGenResources;
 			sourceTree = "<group>";
 		};
 		E9BAC920297FF10300FA6DBC /* Web3Auth */ = {
@@ -484,9 +472,7 @@
 		E9F2EFB028FD6498009604BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E988C24D29016576002E5EB3 /* Localizable.strings */,
 				E9F2EF8928FD3D83009604BF /* Assets.xcassets */,
-				E988C25029016912002E5EB3 /* SwiftGenResources */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -618,7 +604,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F2EF8A28FD3D83009604BF /* Assets.xcassets in Resources */,
-				E988C24B29016576002E5EB3 /* Localizable.strings in Resources */,
 				E968974128FECF3500048E5D /* LaunchScreen.storyboard in Resources */,
 				E92E274B2906C91F00E310B0 /* README.md in Resources */,
 			);
@@ -668,7 +653,6 @@
 				E9D3E0DB29B9F47F00747B6D /* ConfigsImpl.swift in Sources */,
 				E98A98A729781A5200A2893B /* Allowance.swift in Sources */,
 				E9BAC922297FF11B00FA6DBC /* Web3AuthClient.swift in Sources */,
-				E988C25329016986002E5EB3 /* Localization.swift in Sources */,
 				E9D3E0F629B9F63A00747B6D /* WindowImpl.swift in Sources */,
 				E9D3E0F529B9F63A00747B6D /* WindowProtocol.swift in Sources */,
 				E96896D828FE92E400048E5D /* CollectionsExtension.swift in Sources */,
@@ -739,17 +723,6 @@
 			targetProxy = E9F2EF9428FD3D83009604BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E988C24D29016576002E5EB3 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E988C24C29016576002E5EB3 /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E97FC7672902885C002428B1 /* Production */ = {

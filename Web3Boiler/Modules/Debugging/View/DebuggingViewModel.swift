@@ -19,23 +19,23 @@ extension Module {
         var title: String {
             switch self {
             case .walletConnect:
-                return Localization.Debugging.connectWallet
+                return "Wallet connect MetaMask"
             case .web3Account:
-                return Localization.Debugging.web3Account
+                return "Web3Auth google account"
             case .getGasPrice:
-                return Localization.Debugging.gasPrice
+                return "Get gas price"
             case .getBalanceCurrentAddress:
-                return Localization.Debugging.balanceCurrentAddress
+                return "Get balance for current address"
             case .signTransaction:
-                return Localization.Debugging.transaction
+                return "Transfer Goerli ETH"
             case .signContractTransaction:
-                return Localization.Debugging.contractTransaction
+                return "Transfer Goerli ETH USDC"
             case .approveTransaction:
-                return Localization.Debugging.approve
+                return "Approve Goerli ETH USDC"
             case .allowanceTransaction:
-                return Localization.Debugging.allowance
+                return "Get approved Goerli ETH USDC"
             case .transferFromTransaction:
-                return Localization.Debugging.transferFrom
+                return "Transfer approved Goerli ETH USDC"
             }
         }
     }
