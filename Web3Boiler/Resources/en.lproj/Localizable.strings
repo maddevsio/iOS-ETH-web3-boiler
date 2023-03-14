@@ -1,0 +1,23 @@
+// Common
+"common.ok" = "Ok";
+"common.close" = "Close";
+"common.view" = "View";
+"common.cancel" = "Cancel";
+"common.select" = "Select";
+"common.retry" = "Retry";
+"common.done" = "Done";
+
+// Debugging screen
+"debugging.title" = "Debugging screen";
+"debugging.connectWallet" = "Wallet connect meta mask";
+"debugging.web3Account" = "Web3Auth account";
+"debugging.gasPrice" = "Get gas price";
+"debugging.balanceCurrentAddress" = "Get balance for current address";
+"debugging.transaction" = "Sign Transfer Transaction";
+"debugging.contractTransaction" = "Sign Transfer Contract Transaction";
+"debugging.approve" = "Approve Transaction";
+"debugging.allowance" = "Allowance Transaction";
+"debugging.transferFrom" = "Transfer from Transaction";
+"debugging.inviteMember" = "Invite Member";
+"debugging.createProposal" = "Create Proposal";
+"debugging.voteProposal" = "Vote Proposal";

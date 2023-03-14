@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ALCHEMY_KEY</key>
+	<string>$(ALCHEMY_KEY)</string>
+	<key>BASE_URL</key>
+	<string>$(BASE_URL)</string>
+	<key>BRIDGE_TEST_URL</key>
+	<string>$(BRIDGE_TEST_URL)</string>
+	<key>GOERLI_URL</key>
+	<string>$(GOERLI_URL)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>MAIL_APP_URL</key>
+	<string>$(MAIL_APP_URL)</string>
+	<key>PROJ_URL</key>
+	<string>$(PROJ_URL)</string>
+	<key>SUPPORT_MAIL</key>
+	<string>$(SUPPORT_MAIL)</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>$(PROJECT_NAME) Main Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>WC_PROJECT_ID</key>
+	<string>$(WC_PROJECT_ID)</string>
+	<key>WEB3_AUTH_ID</key>
+	<string>$(WEB3_AUTH_ID)</string>
+	<key>WEB3_AUTH_NETWORK</key>
+	<string>$(WEB3_AUTH_NETWORK)</string>
+</dict>
+</plist>

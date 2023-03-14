@@ -1,0 +1,12 @@
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// MARK: - DEBUG
+
+WC_PROJECT_ID =
+PROJ_URL = https:\/\/www.web3boiler.com
+BRIDGE_TEST_URL = https:\/\/bridge.walletconnect.org
+WEB3_AUTH_ID =
+WEB3_AUTH_NETWORK = testnet
+GOERLI_URL = https:\/\/eth-goerli.g.alchemy.com/v2/
+ALCHEMY_KEY =
