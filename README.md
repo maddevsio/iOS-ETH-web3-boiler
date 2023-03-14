@@ -20,7 +20,7 @@
 ### In app utils
 - Configs - Info.plist keys wrapper, Environment variables storage.
 - MainRouter - Route through main root screens (Splash/Login/Main/CreateProfile)
-- SecureStorage - wrapper for KeychainSwift. Store sensitive user information and Base AUTH token
+- SecureStorage - wrapper for KeychainSwift. Store sensitive user information
 - UserDefaultsStorage - store local app state temporary data.
 - WindowProtocol - Wrapper for UIWindow. Handles switch current screen or display something over all app
 
@@ -29,7 +29,7 @@
 - https://www.alchemy.com/
 - https://web3auth.io/
 
-### Environmvet variables
+### Environmvet variables into the xcconfig file
 - WC_PROJECT_ID - WalletConnect project ID
 - WEB3_AUTH_ID - Web3Auth project ID
 - ALCHEMY_KEY - Alchemy key
