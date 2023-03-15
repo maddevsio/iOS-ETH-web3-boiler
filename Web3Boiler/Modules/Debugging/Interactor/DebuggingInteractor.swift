@@ -17,8 +17,8 @@ extension Module {
             let metamask = Web3RepoType.walletConnect.wallets.first(where: { $0 == .metamask })?.link ?? ""
             web3Repo?.connect(WalletModel(walletLink: metamask, appStoreUrl: ""), web3Config: .goerli, completion: { result in
                 switch result {
-                case .success(_):
-                    print("connectToWallet succsess")
+                case .success(let address):
+                    print("connectToWallet succsess \(address ?? "nil")")
                 case .failure(let error):
                     print("connectToWallet failure \(error)")
                 }
@@ -30,8 +30,8 @@ extension Module {
             web3Repo = web3RepoFactory.build(.personalAccount)
             web3Repo?.login(.GOOGLE, web3Config: .goerli, completion: { result in
                 switch result {
-                case .success(_):
-                    print("login web3Auth succsess")
+                case .success(let address):
+                    print("login web3Auth succsess \(address ?? "nil")")
                 case .failure(let error):
                     print("login web3Auth failure \(error)")
                 }
@@ -42,7 +42,7 @@ extension Module {
             web3Repo?.getGasPrise(completion: { result in
                 switch result {
                 case .success(let gasPrice):
-                    print("getGasPrice succsess \(TorusWeb3Utils.toEther(wei: gasPrice ?? 0))")
+                    print("getGasPrice succsess \(TorusWeb3Utils.toEther(Gwie: gasPrice ?? 0)) Gwei")
                 case .failure(let error):
                     print("getGasPrice failure \(error)")
                 }
@@ -74,7 +74,7 @@ extension Module {
             })
         }
         
-        func signContractTransfer() {
+        public func signContractTransfer() {
             // Fill address to
             // Contacrt address goerli usdc
             web3Repo?.transferWithContract(to: "",
@@ -90,7 +90,7 @@ extension Module {
             })
         }
         
-        func approveTransaction() {
+        public func approveTransaction() {
             // Fill address to
             // Contacrt address goerli usdc
             web3Repo?.approve(to: "",
@@ -106,7 +106,7 @@ extension Module {
             })
         }
         
-        func allowanceTransaction() {
+        public func allowanceTransaction() {
             // Fill address owner (from address), sender (to address)
             // If sender nil, sender = signed address
             // Contacrt address goerli usdc
@@ -123,7 +123,7 @@ extension Module {
             })
         }
         
-        func transferFromTransaction() {
+        public func transferFromTransaction() {
             // Fill address sender (to address)
             // Fill address recipient (any address)
             // Contacrt address goerli usdc

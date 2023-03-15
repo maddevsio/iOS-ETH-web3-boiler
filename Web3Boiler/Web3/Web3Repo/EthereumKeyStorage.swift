@@ -1,10 +1,3 @@
-//
-//  EthereumKeyStorage.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 8/2/23.
-//
-
 import Foundation
 import web3
 

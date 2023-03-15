@@ -23,7 +23,6 @@
 		DA942D6B73A5ACD3CA0324F7 /* DebuggingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0A5714638505D5B58A0 /* DebuggingRouter.swift */; };
 		E92633BE2982A100000F0B02 /* Web3ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92633BD2982A100000F0B02 /* Web3ClientError.swift */; };
 		E92633C02982B9EE000F0B02 /* Web3ClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92633BF2982B9EE000F0B02 /* Web3ClientImpl.swift */; };
-		E92E273B2906A61E00E310B0 /* SwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E273A2906A61E00E310B0 /* SwiftExtension.swift */; };
 		E92E274B2906C91F00E310B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E92E274A2906C91F00E310B0 /* README.md */; };
 		E933560C2993BD1D00781208 /* EthereumKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933560B2993BD1D00781208 /* EthereumKeyStorage.swift */; };
 		E937815229757CE200961CB6 /* ContractTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E937815129757CE200961CB6 /* ContractTransfer.swift */; };
@@ -105,7 +104,6 @@
 		E48584BE7310B796D0337BE1 /* DebuggingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebuggingProtocol.swift; sourceTree = "<group>"; };
 		E92633BD2982A100000F0B02 /* Web3ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientError.swift; sourceTree = "<group>"; };
 		E92633BF2982B9EE000F0B02 /* Web3ClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientImpl.swift; sourceTree = "<group>"; };
-		E92E273A2906A61E00E310B0 /* SwiftExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtension.swift; sourceTree = "<group>"; };
 		E92E274A2906C91F00E310B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E933560B2993BD1D00781208 /* EthereumKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumKeyStorage.swift; sourceTree = "<group>"; };
 		E937815129757CE200961CB6 /* ContractTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTransfer.swift; sourceTree = "<group>"; };
@@ -271,7 +269,6 @@
 				E9D3E0DE29B9F5E000747B6D /* Base */,
 				E96896D528FE92CD00048E5D /* CellsExtensions.swift */,
 				E96896D728FE92E400048E5D /* CollectionsExtension.swift */,
-				E92E273A2906A61E00E310B0 /* SwiftExtension.swift */,
 				E99FF8F3292F6FA4007CCF14 /* StringExtension.swift */,
 			);
 			path = Extensions;
@@ -659,7 +656,6 @@
 				E99A743B295EFF3400A440B2 /* WalletConnectError.swift in Sources */,
 				E96896D628FE92CD00048E5D /* CellsExtensions.swift in Sources */,
 				E9DAB3BC29701F4D00334663 /* Transfer.swift in Sources */,
-				E92E273B2906A61E00E310B0 /* SwiftExtension.swift in Sources */,
 				E9D3E0D029B9F44900747B6D /* NeedleGenerated.swift in Sources */,
 				E9D3E0FB29B9F6E800747B6D /* UserDefaultsStorageImpl.swift in Sources */,
 				E99FF8F4292F6FA4007CCF14 /* StringExtension.swift in Sources */,
@@ -789,7 +785,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9U9BZ573V3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(PROJECT_NAME)/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the Camera to allow you to scan documents";

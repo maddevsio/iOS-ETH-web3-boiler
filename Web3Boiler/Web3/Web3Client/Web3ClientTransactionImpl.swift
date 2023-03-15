@@ -1,10 +1,3 @@
-//
-//  ArgentClient.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 12/1/23.
-//
-
 import Foundation
 import web3
 import BigInt

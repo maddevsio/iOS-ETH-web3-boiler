@@ -1,17 +1,10 @@
-//
-//  Web3ClientRepository.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 9/2/23.
-//
-
 import Foundation
 import Web3Auth
 import BigInt
 
 protocol Web3ClientRepository {
-    func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<Void>) -> Void) // Connect with existing wallet
-    func login(_ provider: Web3AuthProvider, web3Config: Web3ClientConfig, completion: @escaping (Result<Void>) -> Void) // Connect with provider via social accounts
+    func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) // Connect with existing wallet
+    func login(_ provider: Web3AuthProvider, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) // Connect with provider via social accounts
     
     func getGasPrise(completion: @escaping (Result<BigUInt?>) -> Void)
     func getBalanceCurrentClient(completion: @escaping (Result<BigUInt?>) -> Void)
@@ -23,6 +16,6 @@ protocol Web3ClientRepository {
 }
 
 extension Web3ClientRepository {
-    func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<Void>) -> Void) {}
-    func login(_ provider: Web3AuthProvider, web3Config: Web3ClientConfig, completion: @escaping (Result<Void>) -> Void) {}
+    func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) {}
+    func login(_ provider: Web3AuthProvider, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) {}
 }

@@ -1,10 +1,3 @@
-//
-//  Web3RepoFactory.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 9/2/23.
-//
-
 import Foundation
 
 protocol Web3RepoFactory {

@@ -1,10 +1,3 @@
-//
-//  Web3AuthClient.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 24/1/23.
-//
-
 import Foundation
 import Web3Auth
 

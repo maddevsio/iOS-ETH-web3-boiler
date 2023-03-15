@@ -1,10 +1,3 @@
-//
-//  WalletConnectionRepository.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 30/12/22.
-//
-
 import Foundation
 import BigInt
 import Web3Auth
@@ -31,7 +24,7 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
         self.walletConnect.delegate = self
     }
     
-    public func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<Void>) -> Void) {
+    public func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) {
         guard let baseUrl = web3Config.baseUrl,
               let key = configs.getKey(.alchemyKey),
               let clientUrl = URL(string: "\(baseUrl)\(key)") else { return }
@@ -46,7 +39,7 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
                 } else {
                     // TODO handle empty connection link
                 }
-                completion(.success(()))
+                completion(.success(walletConnect.getCurrentAddress()))
             case .failure(let error):
                 completion(.failure(error))
                 print("error \(error)")

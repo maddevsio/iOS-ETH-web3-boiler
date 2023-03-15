@@ -1,17 +1,9 @@
-//
-//  Web3Repository.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 24/1/23.
-//
-
 import Foundation
 import web3
 import Web3Auth
 import BigInt
 
 class Web3RepositoryImpl: Web3ClientRepository {
-    
     enum Constants {
         static let baseGasLimit: Double = 21000
     }
@@ -35,7 +27,7 @@ class Web3RepositoryImpl: Web3ClientRepository {
         self.storage = storage
     }
     
-    public func login(_ provider: Web3AuthProvider, web3Config: Web3ClientConfig, completion: @escaping (Result<Void>) -> Void) {
+    public func login(_ provider: Web3AuthProvider, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) {
         guard let baseUrl = web3Config.baseUrl,
               let key = configs.getKey(.alchemyKey),
               let clientUrl = URL(string: "\(baseUrl)\(key)") else { return }
@@ -52,7 +44,7 @@ class Web3RepositoryImpl: Web3ClientRepository {
                 }
                 account = try EthereumAccount(keyStorage: storage!)
                 web3Client = Web3ClientImpl(clientUrl: clientUrl)
-                completion(.success(()))
+                completion(.success(account?.address.value))
             } catch let error {
                 completion(.failure(error))
             }

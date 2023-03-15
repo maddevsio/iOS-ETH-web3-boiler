@@ -1,10 +1,3 @@
-//
-//  ContractTransfer.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 16/1/23.
-//
-
 import Foundation
 import web3
 import BigInt

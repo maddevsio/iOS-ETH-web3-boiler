@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 17/10/22.
-//
-
 import UIKit
 import Foundation
 

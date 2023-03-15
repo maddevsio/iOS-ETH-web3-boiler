@@ -1,10 +1,3 @@
-//
-//  TorusWeb3Utils.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 30/1/23.
-//
-
 import Foundation
 import BigInt
 import web3

@@ -1,10 +1,3 @@
-//
-//  Web3ClientImpl.swift
-//  Web3Boiler
-//
-//  Created by Pavel Pushkarev on 26/1/23.
-//
-
 import Foundation
 import web3
 import BigInt
