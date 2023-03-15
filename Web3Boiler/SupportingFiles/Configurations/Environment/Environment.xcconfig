@@ -4,7 +4,7 @@
 // MARK: - DEBUG
 
 WC_PROJECT_ID =
-PROJ_URL = https:\/\/www.web3boiler.com
+PROJ_URL = 
 BRIDGE_TEST_URL = https:\/\/bridge.walletconnect.org
 WEB3_AUTH_ID =
 WEB3_AUTH_NETWORK = testnet
