@@ -18,9 +18,9 @@ This project is an example of set frameworks implementations that may help you t
 ### Dependencies
 - Secure Data Storage with [KeychainSwift](https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain) , but simplify usage with framework [KeychainSwift](https://github.com/evgenyneu/keychain-swift) ~> 20.0.0
 - UI mockups we use [SnapKit](https://github.com/SnapKit/SnapKit) ~> 5.6.0 which works on AutoLayout with Constraints. NO Storyboards. Code only.
-- [NeedleFoundation](https://github.com/uber/needle.git) NeedleFoundation ~> 0.19.0
-- [WalletConnect V1](https://github.com/WalletConnect/WalletConnectSwift.git) WalletConnect V1 ~> 1.0.0
-- [Web3Auth](https://github.com/web3auth/web3auth-swift-sdk.git) Web3Auth ~> 5.0.0
+- [NeedleFoundation](https://github.com/uber/needle.git) ~> 0.19.0
+- [WalletConnect V1](https://github.com/WalletConnect/WalletConnectSwift.git) V1 ~> 1.0.0
+- [Web3Auth](https://github.com/web3auth/web3auth-swift-sdk.git) ~> 5.0.0
 - [Ethereum web3](https://github.com/argentlabs/web3.swift) Ethereum Swift API with support for smart contracts, ENS & ERC20 ~> 1.1.0
 
 ### In app utils
@@ -31,9 +31,9 @@ This project is an example of set frameworks implementations that may help you t
 - WindowProtocol - Wrapper for UIWindow. Handles switch current screen or display something over all app
 
 ### Services & accounts
-- Create account into the - https://walletconnect.com/, documentation - https://docs.walletconnect.com/1.0/
-- Create account into the - https://www.alchemy.com/
-- Create account into the - https://web3auth.io/, documentation - https://web3auth.io/docs/sdk/ios/initialize . Setup project bundle id into the web3auth profile.
+- Create account into the [WalletConnect](https://walletconnect.com/), [Documentation](https://docs.walletconnect.com/1.0/)
+- Create account into the [Alchemy](https://www.alchemy.com/)
+- Create account into the [Web3Auth](https://web3auth.io/), [Documentation](https://web3auth.io/docs/sdk/ios/initialize). Setup project bundle id into the web3auth profile.
 
 ### Environmvet variables into the xcconfig file
 - WC_PROJECT_ID - WalletConnect project ID
@@ -52,14 +52,14 @@ This project is an example of set frameworks implementations that may help you t
 - Make Allowance with Goerli USDC stablecoin via SmartContract
 - Make Transfer from with Goerli USDC stablecoin via SmartContract
 
-More info about types of transaction: https://docs.openzeppelin.com/contracts/2.x/api/token/erc20
+[More info about types of transaction](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20)
 
-### Nominals https://www.alchemy.com/gwei-calculator:
+### [Nominals](https://www.alchemy.com/gwei-calculator):
 - 0.01 goerli eth = 10000000000000000 (wei)
 - 1 USDC = 1000000 (Mwei)
 
 ### Check transactions:
-- https://goerli.etherscan.io/ , set account address or hash of transaction
+- [Goerli Etherscan](https://goerli.etherscan.io/), set account address or hash of transaction
 - Into the alchemy profile.
 
 ### Build project recomendations
