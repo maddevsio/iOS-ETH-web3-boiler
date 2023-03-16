@@ -27,10 +27,13 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
     public func connect(_ wallet: WalletModel, web3Config: Web3ClientConfig, completion: @escaping (Result<String?>) -> Void) {
         guard let baseUrl = web3Config.baseUrl,
               let key = configs.getKey(.alchemyKey),
-              let clientUrl = URL(string: "\(baseUrl)\(key)") else { return }
+              let clientUrl = URL(string: "\(baseUrl)\(key)") else {
+            completion(.failure(Web3ClientError.EnvKeysMissed))
+            return
+        }
+        
         web3Client = Web3ClientImpl(clientUrl: clientUrl)
         self.wallet = wallet
-        
         walletConnect.connect { [weak self] result in
             switch result {
             case .success(let connectionPart):
@@ -42,7 +45,6 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
                 completion(.success(walletConnect.getCurrentAddress()))
             case .failure(let error):
                 completion(.failure(error))
-                print("error \(error)")
             }
         }
     }
@@ -59,16 +61,24 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
     }
     
     func getBalanceCurrentClient(completion: @escaping (Result<BigUInt?>) -> Void) {
-        guard let signedAddress = walletConnect.getCurrentAddress() else { return }
         Task {
-            let balance = try await web3Client?.getBalance(signedAddress)
-            completion(.success(balance))
+            do {
+                guard let signedAddress = walletConnect.getCurrentAddress() else {
+                    throw Web3ClientError.FromAddressNotFound
+                }
+                let balance = try await web3Client?.getBalance(signedAddress)
+                completion(.success(balance))
+            } catch let error {
+                completion(.failure(error))
+            }
         }
     }
     
     func transfer(to: String, value: BigUInt, completion: @escaping (Result<String?>) -> Void) {
-        guard let signedAddress = walletConnect.getCurrentAddress() else { return }
         do {
+            guard let signedAddress = walletConnect.getCurrentAddress() else {
+                throw Web3ClientError.FromAddressNotFound
+            }
             let transaction = try web3ClientTransaction.transfer(from: signedAddress,
                                                                  to: to,
                                                                  value: value,
@@ -90,8 +100,10 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
     }
     
     func transferWithContract(to: String, contract: String, value: BigUInt, completion: @escaping (Result<String?>) -> Void) {
-        guard let signedAddress = walletConnect.getCurrentAddress() else { return }
         do {
+            guard let signedAddress = walletConnect.getCurrentAddress() else {
+                throw Web3ClientError.FromAddressNotFound
+            }
             let transaction = try web3ClientTransaction.contractTransfer(from: signedAddress,
                                                                          to: to,
                                                                          contract: contract,
@@ -114,8 +126,10 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
     }
     
     func approve(to: String, contract: String, value: BigUInt, completion: @escaping (Result<String?>) -> Void) {
-        guard let signedAddress = walletConnect.getCurrentAddress() else { return }
         do {
+            guard let signedAddress = walletConnect.getCurrentAddress() else {
+                throw Web3ClientError.FromAddressNotFound
+            }
             let transaction = try web3ClientTransaction.approveTransaction(from: signedAddress,
                                                                            to: to,
                                                                            contract: contract,
@@ -139,8 +153,10 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
     }
     
     func allowance(owner: String, sender: String?, contract: String, completion: @escaping (Result<BigUInt?>) -> Void) {
-        guard let signedAddress = walletConnect.getCurrentAddress() else { return }
         Task {
+            guard let signedAddress = walletConnect.getCurrentAddress() else {
+                throw Web3ClientError.FromAddressNotFound
+            }
             let transaction = try web3ClientTransaction.allowanceTransaction(from: signedAddress,
                                                                              owner: owner,
                                                                              sender: sender ?? signedAddress,
@@ -153,9 +169,11 @@ class WalletConnectionRepositoryImpl: Web3ClientRepository {
     
     
     func transferFrom(sender: String, recipient: String, contract: String, value: BigUInt, completion: @escaping (Result<String?>) -> Void) {
-        guard let signedAddress = walletConnect.getCurrentAddress() else { return }
         do {
             // From should be from address that create approve
+            guard let signedAddress = walletConnect.getCurrentAddress() else {
+                throw Web3ClientError.FromAddressNotFound
+            }
             let transaction = try web3ClientTransaction.transferFromTransaction(from: signedAddress,
                                                                                 sender: sender,
                                                                                 recipient: recipient,

@@ -18,7 +18,7 @@ extension Module {
             web3Repo?.connect(WalletModel(walletLink: metamask, appStoreUrl: ""), web3Config: .goerli, completion: { result in
                 switch result {
                 case .success(let address):
-                    print("connectToWallet succsess \(address ?? "nil")")
+                    print("connectToWallet success \(address ?? "nil")")
                 case .failure(let error):
                     print("connectToWallet failure \(error)")
                 }
@@ -31,7 +31,7 @@ extension Module {
             web3Repo?.login(.GOOGLE, web3Config: .goerli, completion: { result in
                 switch result {
                 case .success(let address):
-                    print("login web3Auth succsess \(address ?? "nil")")
+                    print("login web3Auth success \(address ?? "nil")")
                 case .failure(let error):
                     print("login web3Auth failure \(error)")
                 }
@@ -42,7 +42,7 @@ extension Module {
             web3Repo?.getGasPrise(completion: { result in
                 switch result {
                 case .success(let gasPrice):
-                    print("getGasPrice succsess \(TorusWeb3Utils.toEther(Gwie: gasPrice ?? 0)) Gwei")
+                    print("getGasPrice success \(TorusWeb3Utils.toEther(Gwie: gasPrice ?? 0)) Gwei")
                 case .failure(let error):
                     print("getGasPrice failure \(error)")
                 }
@@ -53,7 +53,7 @@ extension Module {
             web3Repo?.getBalanceCurrentClient(completion: { result in
                 switch result {
                 case .success(let balance):
-                    print("getBalance succsess \(TorusWeb3Utils.toEther(wei: balance ?? 0))")
+                    print("getBalance success \(TorusWeb3Utils.toEther(wei: balance ?? 0))")
                 case .failure(let error):
                     print("getBalance failure \(error)")
                 }
@@ -67,7 +67,7 @@ extension Module {
                                completion: { result in
                 switch result {
                 case .success(let hash):
-                    print("signTransfer succsess \(String(describing: hash))")
+                    print("signTransfer success \(String(describing: hash))")
                 case .failure(let error):
                     print("signTransfer failure \(error)")
                 }
@@ -83,7 +83,7 @@ extension Module {
                                            completion: { result in
                 switch result {
                 case .success(let hash):
-                    print("signContractTransfer succsess \(String(describing: hash))")
+                    print("signContractTransfer success \(String(describing: hash))")
                 case .failure(let error):
                     print("signContractTransfer failure \(error)")
                 }
@@ -99,7 +99,7 @@ extension Module {
                               completion: { result in
                 switch result {
                 case .success(let hash):
-                    print("approveTransaction succsess \(String(describing: hash))")
+                    print("approveTransaction success \(String(describing: hash))")
                 case .failure(let error):
                     print("approveTransaction failure \(error)")
                 }
@@ -116,7 +116,7 @@ extension Module {
                                 completion: { result in
                 switch result {
                 case .success(let balance):
-                    print("allowanceTransaction succsess \(TorusWeb3Utils.fromStable(amount: balance ?? 0))")
+                    print("allowanceTransaction success \(TorusWeb3Utils.fromStable(amount: balance ?? 0))")
                 case .failure(let error):
                     print("allowanceTransaction failure \(error)")
                 }
@@ -134,7 +134,7 @@ extension Module {
                                    completion: { result in
                 switch result {
                 case .success(let hash):
-                    print("transferFromTransaction succsess \(String(describing: hash))")
+                    print("transferFromTransaction success \(String(describing: hash))")
                 case .failure(let error):
                     print("transferFromTransaction failure \(error)")
                 }
