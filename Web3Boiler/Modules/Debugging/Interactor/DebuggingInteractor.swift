@@ -69,7 +69,7 @@ extension Module {
             // Fill address to
             Task {
                 do {
-                    let result = try await web3Repo?.transfer(to: "0x0879Fc0f91b7952aE1140E84BBAa57e198aDA9F5",
+                    let result = try await web3Repo?.transfer(to: "",
                                                               value: TorusWeb3Utils.toWei(ether: 0.1))
                     print("signTransfer success \(String(describing: result))")
                 } catch let error {
@@ -83,8 +83,8 @@ extension Module {
             // Contacrt address goerli usdc
             Task {
                 do {
-                    let result = try await web3Repo?.transferWithContract(to: "0xF4Aa35fcF7907342F5fdE7112bFCb7bCe6C0228F",
-                                                                          contract: "0x07865c6E87B9F70255377e024ace6630C1Eaa37F",
+                    let result = try await web3Repo?.transferWithContract(to: "",
+                                                                          contract: Constants.contractUSDC,
                                                                           value: TorusWeb3Utils.toStable(amount: 10))
                     print("signContractTransfer success \(String(describing: result))")
                 } catch let error {
@@ -98,8 +98,8 @@ extension Module {
             // Contacrt address goerli usdc
             Task {
                 do {
-                    let result = try await web3Repo?.approve(to: "0xF4Aa35fcF7907342F5fdE7112bFCb7bCe6C0228F",
-                                                             contract: "0x07865c6E87B9F70255377e024ace6630C1Eaa37F",
+                    let result = try await web3Repo?.approve(to: "",
+                                                             contract: Constants.contractUSDC,
                                                              value: TorusWeb3Utils.toStable(amount: 100))
                     print("approveTransaction success \(String(describing: result))")
                 } catch let error {
@@ -113,7 +113,7 @@ extension Module {
             // Contacrt address goerli usdc
             Task {
                 do {
-                    let balance = try await web3Repo?.allowance(owner: "0xc61Baa7CAE4122DC0D25c4d71d0926c2Cfb43FcC",
+                    let balance = try await web3Repo?.allowance(owner: "",
                                                                 sender: nil,
                                                                 contract: Constants.contractUSDC)
                     print("allowanceTransaction success \(TorusWeb3Utils.fromStable(amount: balance ?? 0))")
@@ -129,9 +129,9 @@ extension Module {
             // Contacrt address goerli usdc
             Task {
                 do {
-                    let result = try await web3Repo?.transferFrom(sender: "0xc61Baa7CAE4122DC0D25c4d71d0926c2Cfb43FcC",
-                                                                  recipient: "0xF4Aa35fcF7907342F5fdE7112bFCb7bCe6C0228F",
-                                                                  contract: "0x07865c6E87B9F70255377e024ace6630C1Eaa37F",
+                    let result = try await web3Repo?.transferFrom(sender: "",
+                                                                  recipient: "",
+                                                                  contract: Constants.contractUSDC,
                                                                   value: TorusWeb3Utils.toStable(amount: 10))
                     print("transferFromTransaction success \(String(describing: result))")
                 } catch let error {
