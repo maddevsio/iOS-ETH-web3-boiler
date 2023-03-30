@@ -4,6 +4,7 @@ enum Web3ClientConfig {
     case goerli
     case ethereum
     case polygon
+    case sepolia
     
     var name: String {
         switch self {
@@ -13,6 +14,8 @@ enum Web3ClientConfig {
             return "Ethereum Mainnet"
         case .polygon:
             return "Polygon Mainnet"
+        case .sepolia:
+            return "Sepolia"
         }
     }
     
@@ -24,6 +27,8 @@ enum Web3ClientConfig {
             return 1
         case .polygon:
             return 137
+        case .sepolia:
+            return 11155111
         }
     }
     
@@ -32,9 +37,11 @@ enum Web3ClientConfig {
         case .goerli:
             return ConfigsImpl().getUrl(.goerliURL)
         case .ethereum:
-            return nil
+            return ConfigsImpl().getUrl(.ethereumURL)
         case .polygon:
-            return nil
+            return ConfigsImpl().getUrl(.polygonURL)
+        case .sepolia:
+            return ConfigsImpl().getUrl(.sepoliaURL)
         }
     }
 }

@@ -10,6 +10,7 @@ public extension Module {
 public protocol DebuggingInteractorInput {
     func connectToWallet()
     func web3AccountConnect()
+    func logout()
     func getGasPrice()
     func getBalance()
     func signTransfer()

@@ -24,9 +24,8 @@ class Web3AuthClientImpl: Web3AuthClient {
             web3auth = await Web3Auth(.init(clientId: id,
                                             network: network,
                                             redirectUrl: nil,
-                                            whiteLabel: .init(name: "Web3Boiler")))
+                                            whiteLabel: .init(name: "Web3 Boiler")))
         }
-        
     }
     
     public func login(_ provider: Web3AuthProvider) async throws -> Web3AuthState? {

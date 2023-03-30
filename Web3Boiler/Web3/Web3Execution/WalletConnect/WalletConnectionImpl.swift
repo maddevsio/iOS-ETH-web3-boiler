@@ -7,14 +7,13 @@ protocol WalletConnection {
     var delegate: WalletConnectionDelegate? { get set }
     
     func connect(_ completion: (Result<String, WalletConnectError>) -> Void)
+    func logout() throws
     func reconnectIfNeeded()
     func getCurrentAddress() -> String?
     
     func signTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult)
-    func signContractTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult)
     
-    func approveTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult)
-    func transferFromTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult)
+    func sendTransactionWithData(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult)
 }
 
 class WalletConnectionImpl: WalletConnection {
@@ -46,7 +45,7 @@ class WalletConnectionImpl: WalletConnection {
                       key: String().randomKey)
         
         let clientMeta = Session.ClientMeta(name: "Web3 Boiler",
-                                            description: "Web3 Boiler",
+                                            description: "Web3 Boiler description",
                                             icons: [],
                                             url: clientURL)
         
@@ -62,6 +61,14 @@ class WalletConnectionImpl: WalletConnection {
             print("Main connect error \(error.localizedDescription)")
             completion(.failure(.connectionError))
         }
+    }
+    
+    public func logout() throws {
+        guard let session else {
+            throw WalletConnectError.sessionMissed
+        }
+        
+        try client?.disconnect(from: session)
     }
     
     public func reconnectIfNeeded() {
@@ -100,7 +107,7 @@ class WalletConnectionImpl: WalletConnection {
         }
     }
     
-    public func signContractTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult) {
+    public func sendTransactionWithData(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult) {
         let clientTransaction: Client.Transaction = .init(from: transaction.from!.value,
                                                           to: transaction.to.value,
                                                           data: (transaction.data?.web3.hexString)!,
@@ -124,68 +131,20 @@ class WalletConnectionImpl: WalletConnection {
         }
     }
     
-    public func approveTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult) {
-        let clientTransaction: Client.Transaction = .init(from: transaction.from!.value,
-                                                          to: transaction.to.value,
-                                                          data: (transaction.data?.web3.hexString)!,
-                                                          gas: nil,
-                                                          gasPrice: nil,
-                                                          value: nil,
-                                                          nonce: nil,
-                                                          type: nil,
-                                                          accessList: nil,
-                                                          chainId: nil,
-                                                          maxPriorityFeePerGas: nil,
-                                                          maxFeePerGas: nil)
-        completion(.openWallet)
-        sendTransaction(clientTransaction) { result in
-            switch result {
-            case .success(let response):
-                completion(.success(response))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-    
-    public func transferFromTransaction(_ transaction: EthereumTransaction, completion: @escaping WalletConnectionImpl.WCResult) {
-        let clientTransaction: Client.Transaction = .init(from: transaction.from!.value,
-                                                          to: transaction.to.value,
-                                                          data: (transaction.data?.web3.hexString)!,
-                                                          gas: nil,
-                                                          gasPrice: nil,
-                                                          value: nil,
-                                                          nonce: nil,
-                                                          type: nil,
-                                                          accessList: nil,
-                                                          chainId: nil,
-                                                          maxPriorityFeePerGas: nil,
-                                                          maxFeePerGas: nil)
-        completion(.openWallet)
-        sendTransaction(clientTransaction) { result in
-            switch result {
-            case .success(let response):
-                completion(.success(response))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-    
-    fileprivate func sendTransaction(_ transaction: Client.Transaction, completion: @escaping (Result<String, WalletConnectError>) -> Void) {
+    public func sendTransaction(_ transaction: Client.Transaction, completion: @escaping (Result<String, WalletConnectError>) -> Void) {
         guard let url = session?.url else {
             completion(.failure(.connectionError))
             return
         }
         do {
             try client?.eth_sendTransaction(url: url, transaction: transaction, completion: { response in
+                print("Main sendTransaction response error \(String(describing: response.error)))")
                 print("Main sendTransaction response result \(String(describing: try? response.result(as: String.self)))")
                 let value = try? response.result(as: String.self)
                 
                 if let value = value, response.error == nil {
                     completion(.success(value))
                 } else {
-                    print("Main sendTransaction response error \(String(describing: response.error)))")
                     completion(.failure(.transactionFailed(response.error?.localizedDescription ?? "Send Transaction Failed")))
                 }
             })

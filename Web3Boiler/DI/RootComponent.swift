@@ -42,19 +42,19 @@ class RootComponent: BootstrapComponent {
             return Web3AuthClientImpl(config: configs)
         }
     }
-    var web3Transaction: Web3ClientTransaction {
-        return Web3ClientTransactionImpl()
+    var web3Transaction: Web3ClientFunctions {
+        return Web3ClientFunctionsImpl()
     }
     var ethStorage: EthKeyStorage {
         return EthereumKeyStorage(secureStorage)
     }
-    var web3Repository: Web3ClientRepository {
+    var web3Repository: Web3ClientWriteRepositoryProtocol {
         return shared { Web3RepositoryImpl(configs: configs,
                                            web3Auth: web3AuthClient,
                                            web3ClientTransaction: web3Transaction,
                                            storage: ethStorage) }
     }
-    var walletConnectionRepo: Web3ClientRepository {
+    var walletConnectionRepo: Web3ClientWriteRepositoryProtocol {
         return shared { return WalletConnectionRepositoryImpl(mainRouter: mainRouter,
                                                               configs: configs,
                                                               walletConnect: walletConnection,

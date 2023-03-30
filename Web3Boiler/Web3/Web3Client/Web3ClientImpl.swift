@@ -6,8 +6,9 @@ protocol Web3Client {
     // Read
     func getGas() async throws -> BigUInt?
     func getBalance(_ address: String) async throws -> BigUInt?
-    func allowanceTransaction(transaction: EthereumTransaction) async throws -> BigUInt?
+    func readTransaction(transaction: EthereumTransaction) async throws -> String?
     func getNonce(_ address: String) async throws -> Int
+    func transactionReceipt(hash: String) async throws -> EthereumTransactionReceipt
     
     // Write
     func rawTransaction(account: EthereumAccount, transaction: EthereumTransaction) async throws -> String
@@ -32,11 +33,15 @@ class Web3ClientImpl: Web3Client {
         return try await client.eth_getTransactionCount(address: EthereumAddress(address), block: .Latest)
     }
     
-    public func allowanceTransaction(transaction: EthereumTransaction) async throws -> BigUInt? {
-        return await BigUInt(hex: try client!.eth_call(transaction, block: .Latest))
+    public func readTransaction(transaction: EthereumTransaction) async throws -> String? {
+        return try await client!.eth_call(transaction, block: .Latest)
     }
     
     public func rawTransaction(account: EthereumAccount, transaction: EthereumTransaction) async throws -> String {
         return try await client.eth_sendRawTransaction(transaction, withAccount: account)
+    }
+    
+    public func transactionReceipt(hash: String) async throws -> EthereumTransactionReceipt {
+        return try await client.eth_getTransactionReceipt(txHash: hash)
     }
 }
