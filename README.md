@@ -8,7 +8,7 @@ This project is an example of set frameworks implementations that may help you t
 - Xcode 13.0+
 
 ## Getting started
-- [x] Install Needle DI `brew install needle`  [source](https://github.com/uber/needle#install-code-generator) [brew](https://brew.sh/)
+- [x] Install Needle DI `brew install needle` [source](https://github.com/uber/needle#install-code-generator) [brew](https://brew.sh/)
 
 ## Project structure
 - Package Manager is also Apple native [SPM](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app)
@@ -25,15 +25,15 @@ This project is an example of set frameworks implementations that may help you t
 
 ### In app utils
 - Configs - Info.plist keys wrapper, Environment variables storage.
-- MainRouter - Route through main root screens (Splash/Login/Main/CreateProfile)
-- SecureStorage - wrapper for KeychainSwift. Store sensitive user information
-- UserDefaultsStorage - store local app state temporary data.
-- WindowProtocol - Wrapper for UIWindow. Handles switch current screen or display something over all app
+- MainRouter - Route through main root screens.
+- SecureStorage - Wrapper for KeychainSwift. Store sensitive user information.
+- UserDefaultsStorage - Store local app state temporary data.
+- WindowProtocol - Wrapper for UIWindow. Handles switch current screen or display something over all app.
 
 ### Services & accounts
 - Create account into the [WalletConnect](https://walletconnect.com/), [Documentation](https://docs.walletconnect.com/1.0/)
 - Create account into the [Alchemy](https://www.alchemy.com/)
-- Create account into the [Web3Auth](https://web3auth.io/), [Documentation](https://web3auth.io/docs/sdk/ios/initialize). Setup project bundle id into the web3auth profile.
+- Create account into the [Web3Auth](https://web3auth.io/), [Documentation](https://web3auth.io/docs/sdk/ios/initialize). Setup project bundle id into the web3auth admin panel.
 
 ### Environmvet variables into the xcconfig file
 - WC_PROJECT_ID - WalletConnect project ID
