@@ -1,5 +1,7 @@
 import Foundation
 
+// https://docs.alchemy.com/docs/how-to-add-alchemy-rpc-endpoints-to-metamask#step-4-fill-in-the-network-details
+// Alchemy networks list
 enum Web3ClientConfig {
     case goerli
     case ethereum
