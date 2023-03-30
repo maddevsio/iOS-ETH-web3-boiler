@@ -21,29 +21,35 @@
 		D5BBAC54819F6792BDFAF5DA /* DebuggingViewManagerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52F86824F7696FF1E7C089 /* DebuggingViewManagerOutput.swift */; };
 		D5BE3D4FBC85015B0BC8DB83 /* DebuggingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48584BE7310B796D0337BE1 /* DebuggingProtocol.swift */; };
 		DA942D6B73A5ACD3CA0324F7 /* DebuggingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D0A5714638505D5B58A0 /* DebuggingRouter.swift */; };
-		E92633BE2982A100000F0B02 /* Web3ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92633BD2982A100000F0B02 /* Web3ClientError.swift */; };
-		E92633C02982B9EE000F0B02 /* Web3ClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92633BF2982B9EE000F0B02 /* Web3ClientImpl.swift */; };
 		E92E274B2906C91F00E310B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E92E274A2906C91F00E310B0 /* README.md */; };
-		E933560C2993BD1D00781208 /* EthereumKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933560B2993BD1D00781208 /* EthereumKeyStorage.swift */; };
-		E937815229757CE200961CB6 /* ContractTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E937815129757CE200961CB6 /* ContractTransfer.swift */; };
 		E96896D628FE92CD00048E5D /* CellsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96896D528FE92CD00048E5D /* CellsExtensions.swift */; };
 		E96896D828FE92E400048E5D /* CollectionsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96896D728FE92E400048E5D /* CollectionsExtension.swift */; };
 		E968974128FECF3500048E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E968974028FECF3500048E5D /* LaunchScreen.storyboard */; };
-		E96E48852987D5290037F9CB /* TorusWeb3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E48842987D5290037F9CB /* TorusWeb3Utils.swift */; };
-		E98A98A529781A4B00A2893B /* Approve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A98A429781A4B00A2893B /* Approve.swift */; };
-		E98A98A729781A5200A2893B /* Allowance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A98A629781A5200A2893B /* Allowance.swift */; };
-		E98A98A929781A5A00A2893B /* TransferFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A98A829781A5A00A2893B /* TransferFrom.swift */; };
+		E98F179229D5AD4100FBFD0D /* Web3ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F176A29D5AD4100FBFD0D /* Web3ClientConfig.swift */; };
+		E98F179329D5AD4100FBFD0D /* Web3AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F176C29D5AD4100FBFD0D /* Web3AuthClient.swift */; };
+		E98F179429D5AD4100FBFD0D /* Web3ClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F176E29D5AD4100FBFD0D /* Web3ClientImpl.swift */; };
+		E98F179529D5AD4100FBFD0D /* Web3ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F176F29D5AD4100FBFD0D /* Web3ClientError.swift */; };
+		E98F179729D5AD4100FBFD0D /* Approve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F177329D5AD4100FBFD0D /* Approve.swift */; };
+		E98F179829D5AD4100FBFD0D /* ContractTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F177429D5AD4100FBFD0D /* ContractTransfer.swift */; };
+		E98F179929D5AD4100FBFD0D /* TransferFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F177529D5AD4100FBFD0D /* TransferFrom.swift */; };
+		E98F179A29D5AD4100FBFD0D /* Allowance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F177629D5AD4100FBFD0D /* Allowance.swift */; };
+		E98F179B29D5AD4100FBFD0D /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F177729D5AD4100FBFD0D /* Transfer.swift */; };
+		E98F17A729D5AD4100FBFD0D /* Web3ClientFunctionsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178429D5AD4100FBFD0D /* Web3ClientFunctionsImpl.swift */; };
+		E98F17A829D5AD4100FBFD0D /* Web3RepoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178529D5AD4100FBFD0D /* Web3RepoFactory.swift */; };
+		E98F17A929D5AD4100FBFD0D /* Web3ClientReadRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178729D5AD4100FBFD0D /* Web3ClientReadRepository.swift */; };
+		E98F17AA29D5AD4100FBFD0D /* Web3Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178929D5AD4100FBFD0D /* Web3Repository.swift */; };
+		E98F17AB29D5AD4100FBFD0D /* EthereumKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178A29D5AD4100FBFD0D /* EthereumKeyStorage.swift */; };
+		E98F17AC29D5AD4100FBFD0D /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178C29D5AD4100FBFD0D /* WalletModel.swift */; };
+		E98F17AD29D5AD4100FBFD0D /* WalletConnectionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178D29D5AD4100FBFD0D /* WalletConnectionImpl.swift */; };
+		E98F17AE29D5AD4100FBFD0D /* WalletConnectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178E29D5AD4100FBFD0D /* WalletConnectError.swift */; };
+		E98F17AF29D5AD4100FBFD0D /* WalletConnectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F178F29D5AD4100FBFD0D /* WalletConnectionRepository.swift */; };
+		E98F17B029D5AD4100FBFD0D /* WalletConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F179029D5AD4100FBFD0D /* WalletConnectionDelegate.swift */; };
+		E98F17B129D5AD4100FBFD0D /* Web3ClientWriteRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F179129D5AD4100FBFD0D /* Web3ClientWriteRepositoryProtocol.swift */; };
+		E98F17B329D5AE6400FBFD0D /* TorusWeb3Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F17B229D5AE6400FBFD0D /* TorusWeb3Utils.swift */; };
+		E98F17B529D5B3B300FBFD0D /* Web3ClientConnectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F17B429D5B3B300FBFD0D /* Web3ClientConnectProtocol.swift */; };
 		E99A7437295EFE7300A440B2 /* WalletConnectSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E99A7436295EFE7300A440B2 /* WalletConnectSwift */; };
-		E99A7439295EFF2D00A440B2 /* WalletConnectionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A7438295EFF2D00A440B2 /* WalletConnectionImpl.swift */; };
-		E99A743B295EFF3400A440B2 /* WalletConnectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A743A295EFF3400A440B2 /* WalletConnectError.swift */; };
-		E99A743D295EFF6200A440B2 /* WalletConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A743C295EFF6200A440B2 /* WalletConnectionDelegate.swift */; };
-		E99A743F295F095400A440B2 /* WalletConnectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A743E295F095400A440B2 /* WalletConnectionRepository.swift */; };
-		E99EF79A296D75D90027F332 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99EF799296D75D90027F332 /* WalletModel.swift */; };
 		E99FF8F4292F6FA4007CCF14 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FF8F3292F6FA4007CCF14 /* StringExtension.swift */; };
 		E9AD9C17297FEB9D00ED70BD /* Web3Auth in Frameworks */ = {isa = PBXBuildFile; productRef = E9AD9C16297FEB9D00ED70BD /* Web3Auth */; };
-		E9BAC922297FF11B00FA6DBC /* Web3AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAC921297FF11B00FA6DBC /* Web3AuthClient.swift */; };
-		E9BAC926298001F300FA6DBC /* Web3Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAC925298001F300FA6DBC /* Web3Repository.swift */; };
-		E9BAC9282980033600FA6DBC /* Web3ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAC9272980033600FA6DBC /* Web3ClientConfig.swift */; };
 		E9BD65922959BD4B00D7C59E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E9BD65912959BD4B00D7C59E /* SnapKit */; };
 		E9BD65952959BDBA00D7C59E /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E9BD65942959BDBA00D7C59E /* KeychainSwift */; };
 		E9D3E0CA29B9F40B00747B6D /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = E9D3E0C929B9F40B00747B6D /* NeedleFoundation */; };
@@ -66,14 +72,9 @@
 		E9D3E0FA29B9F6E800747B6D /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3E0F829B9F6E700747B6D /* UserDefaultsStorage.swift */; };
 		E9D3E0FB29B9F6E800747B6D /* UserDefaultsStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3E0F929B9F6E700747B6D /* UserDefaultsStorageImpl.swift */; };
 		E9D7AF2F295DB0F0003DB8CE /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = E9D7AF2E295DB0F0003DB8CE /* Starscream */; };
-		E9DAB3BA29701E9D00334663 /* Web3ClientTransactionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DAB3B929701E9D00334663 /* Web3ClientTransactionImpl.swift */; };
-		E9DAB3BC29701F4D00334663 /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DAB3BB29701F4D00334663 /* Transfer.swift */; };
-		E9EA2AEC299516E500E288D5 /* Web3ClientRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA2AEB299516E500E288D5 /* Web3ClientRepository.swift */; };
-		E9EA2AEE299518CB00E288D5 /* Web3RepoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA2AED299518CB00E288D5 /* Web3RepoFactory.swift */; };
 		E9F2EF8128FD3D82009604BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F2EF8028FD3D82009604BF /* AppDelegate.swift */; };
 		E9F2EF8328FD3D82009604BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F2EF8228FD3D82009604BF /* SceneDelegate.swift */; };
 		E9F2EF8A28FD3D83009604BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F2EF8928FD3D83009604BF /* Assets.xcassets */; };
-		E9FEE18A29BB526A002A0F70 /* WalletConnectResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FEE18929BB526A002A0F70 /* WalletConnectResult.swift */; };
 		FF81DCE3A4C580D034A7C2DC /* DebuggingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF852D019AFF8E7467CA0290 /* DebuggingViewOutput.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,29 +93,35 @@
 		DBD43397E7F3EB90F86E6605 /* DebuggingConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebuggingConfigurator.swift; sourceTree = "<group>"; };
 		DF852D019AFF8E7467CA0290 /* DebuggingViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebuggingViewOutput.swift; sourceTree = "<group>"; };
 		E48584BE7310B796D0337BE1 /* DebuggingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebuggingProtocol.swift; sourceTree = "<group>"; };
-		E92633BD2982A100000F0B02 /* Web3ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientError.swift; sourceTree = "<group>"; };
-		E92633BF2982B9EE000F0B02 /* Web3ClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientImpl.swift; sourceTree = "<group>"; };
 		E92E274A2906C91F00E310B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E933560B2993BD1D00781208 /* EthereumKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumKeyStorage.swift; sourceTree = "<group>"; };
-		E937815129757CE200961CB6 /* ContractTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTransfer.swift; sourceTree = "<group>"; };
 		E96896D528FE92CD00048E5D /* CellsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsExtensions.swift; sourceTree = "<group>"; };
 		E96896D728FE92E400048E5D /* CollectionsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsExtension.swift; sourceTree = "<group>"; };
 		E968974028FECF3500048E5D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E96E48842987D5290037F9CB /* TorusWeb3Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorusWeb3Utils.swift; sourceTree = "<group>"; };
 		E97FC7722902E05F002428B1 /* Environment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Environment.xcconfig; sourceTree = "<group>"; };
-		E98A98A429781A4B00A2893B /* Approve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approve.swift; sourceTree = "<group>"; };
-		E98A98A629781A5200A2893B /* Allowance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allowance.swift; sourceTree = "<group>"; };
-		E98A98A829781A5A00A2893B /* TransferFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFrom.swift; sourceTree = "<group>"; };
 		E98D2BFC2959C3E200FDD1A6 /* Web3Boiler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Web3Boiler.entitlements; sourceTree = "<group>"; };
-		E99A7438295EFF2D00A440B2 /* WalletConnectionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectionImpl.swift; sourceTree = "<group>"; };
-		E99A743A295EFF3400A440B2 /* WalletConnectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectError.swift; sourceTree = "<group>"; };
-		E99A743C295EFF6200A440B2 /* WalletConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectionDelegate.swift; sourceTree = "<group>"; };
-		E99A743E295F095400A440B2 /* WalletConnectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectionRepository.swift; sourceTree = "<group>"; };
-		E99EF799296D75D90027F332 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		E98F176A29D5AD4100FBFD0D /* Web3ClientConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3ClientConfig.swift; sourceTree = "<group>"; };
+		E98F176C29D5AD4100FBFD0D /* Web3AuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3AuthClient.swift; sourceTree = "<group>"; };
+		E98F176E29D5AD4100FBFD0D /* Web3ClientImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3ClientImpl.swift; sourceTree = "<group>"; };
+		E98F176F29D5AD4100FBFD0D /* Web3ClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3ClientError.swift; sourceTree = "<group>"; };
+		E98F177329D5AD4100FBFD0D /* Approve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Approve.swift; sourceTree = "<group>"; };
+		E98F177429D5AD4100FBFD0D /* ContractTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractTransfer.swift; sourceTree = "<group>"; };
+		E98F177529D5AD4100FBFD0D /* TransferFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferFrom.swift; sourceTree = "<group>"; };
+		E98F177629D5AD4100FBFD0D /* Allowance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allowance.swift; sourceTree = "<group>"; };
+		E98F177729D5AD4100FBFD0D /* Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		E98F178429D5AD4100FBFD0D /* Web3ClientFunctionsImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3ClientFunctionsImpl.swift; sourceTree = "<group>"; };
+		E98F178529D5AD4100FBFD0D /* Web3RepoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3RepoFactory.swift; sourceTree = "<group>"; };
+		E98F178729D5AD4100FBFD0D /* Web3ClientReadRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3ClientReadRepository.swift; sourceTree = "<group>"; };
+		E98F178929D5AD4100FBFD0D /* Web3Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Repository.swift; sourceTree = "<group>"; };
+		E98F178A29D5AD4100FBFD0D /* EthereumKeyStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumKeyStorage.swift; sourceTree = "<group>"; };
+		E98F178C29D5AD4100FBFD0D /* WalletModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		E98F178D29D5AD4100FBFD0D /* WalletConnectionImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletConnectionImpl.swift; sourceTree = "<group>"; };
+		E98F178E29D5AD4100FBFD0D /* WalletConnectError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletConnectError.swift; sourceTree = "<group>"; };
+		E98F178F29D5AD4100FBFD0D /* WalletConnectionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletConnectionRepository.swift; sourceTree = "<group>"; };
+		E98F179029D5AD4100FBFD0D /* WalletConnectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletConnectionDelegate.swift; sourceTree = "<group>"; };
+		E98F179129D5AD4100FBFD0D /* Web3ClientWriteRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3ClientWriteRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E98F17B229D5AE6400FBFD0D /* TorusWeb3Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorusWeb3Utils.swift; sourceTree = "<group>"; };
+		E98F17B429D5B3B300FBFD0D /* Web3ClientConnectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientConnectProtocol.swift; sourceTree = "<group>"; };
 		E99FF8F3292F6FA4007CCF14 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		E9BAC921297FF11B00FA6DBC /* Web3AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3AuthClient.swift; sourceTree = "<group>"; };
-		E9BAC925298001F300FA6DBC /* Web3Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Repository.swift; sourceTree = "<group>"; };
-		E9BAC9272980033600FA6DBC /* Web3ClientConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientConfig.swift; sourceTree = "<group>"; };
 		E9D3E0CE29B9F44900747B6D /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		E9D3E0CF29B9F44900747B6D /* RootComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
 		E9D3E0D429B9F47E00747B6D /* SecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
@@ -132,16 +139,11 @@
 		E9D3E0F429B9F63A00747B6D /* WindowImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowImpl.swift; sourceTree = "<group>"; };
 		E9D3E0F829B9F6E700747B6D /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		E9D3E0F929B9F6E700747B6D /* UserDefaultsStorageImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageImpl.swift; sourceTree = "<group>"; };
-		E9DAB3B929701E9D00334663 /* Web3ClientTransactionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientTransactionImpl.swift; sourceTree = "<group>"; };
-		E9DAB3BB29701F4D00334663 /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
-		E9EA2AEB299516E500E288D5 /* Web3ClientRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ClientRepository.swift; sourceTree = "<group>"; };
-		E9EA2AED299518CB00E288D5 /* Web3RepoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3RepoFactory.swift; sourceTree = "<group>"; };
 		E9F2EF7D28FD3D82009604BF /* Web3Boiler Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web3Boiler Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F2EF8028FD3D82009604BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F2EF8228FD3D82009604BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E9F2EF8928FD3D83009604BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F2EF8E28FD3D83009604BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9FEE18929BB526A002A0F70 /* WalletConnectResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectResult.swift; sourceTree = "<group>"; };
 		EDC3D0A5714638505D5B58A0 /* DebuggingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebuggingRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,18 +235,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E933560A2993B97300781208 /* Transactions */ = {
-			isa = PBXGroup;
-			children = (
-				E9DAB3BB29701F4D00334663 /* Transfer.swift */,
-				E937815129757CE200961CB6 /* ContractTransfer.swift */,
-				E98A98A429781A4B00A2893B /* Approve.swift */,
-				E98A98A629781A5200A2893B /* Allowance.swift */,
-				E98A98A829781A5A00A2893B /* TransferFrom.swift */,
-			);
-			path = Transactions;
-			sourceTree = "<group>";
-		};
 		E96896D028FE918000048E5D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,36 +262,89 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
-		E9BAC920297FF10300FA6DBC /* Web3Auth */ = {
+		E98F176929D5AD4100FBFD0D /* Web3 */ = {
 			isa = PBXGroup;
 			children = (
-				E9BAC921297FF11B00FA6DBC /* Web3AuthClient.swift */,
-			);
-			path = Web3Auth;
-			sourceTree = "<group>";
-		};
-		E9BAC9232980019B00FA6DBC /* Web3 */ = {
-			isa = PBXGroup;
-			children = (
-				E96E48842987D5290037F9CB /* TorusWeb3Utils.swift */,
-				E9EA2AED299518CB00E288D5 /* Web3RepoFactory.swift */,
-				E9EA2AEB299516E500E288D5 /* Web3ClientRepository.swift */,
-				E9BAC924298001A900FA6DBC /* Web3Repo */,
-				E9D7AF0C295D7DCF003DB8CE /* WalletConnect */,
-				E9BAC920297FF10300FA6DBC /* Web3Auth */,
-				E9DAB3B829701E8100334663 /* Web3Client */,
+				E98F17B229D5AE6400FBFD0D /* TorusWeb3Utils.swift */,
+				E98F178529D5AD4100FBFD0D /* Web3RepoFactory.swift */,
+				E98F176A29D5AD4100FBFD0D /* Web3ClientConfig.swift */,
+				E98F176B29D5AD4100FBFD0D /* Web3Auth */,
+				E98F176D29D5AD4100FBFD0D /* Web3Client */,
+				E98F177029D5AD4100FBFD0D /* Functions */,
+				E98F178629D5AD4100FBFD0D /* Web3Execution */,
 			);
 			path = Web3;
 			sourceTree = "<group>";
 		};
-		E9BAC924298001A900FA6DBC /* Web3Repo */ = {
+		E98F176B29D5AD4100FBFD0D /* Web3Auth */ = {
 			isa = PBXGroup;
 			children = (
-				E9BAC925298001F300FA6DBC /* Web3Repository.swift */,
-				E9BAC9272980033600FA6DBC /* Web3ClientConfig.swift */,
-				E933560B2993BD1D00781208 /* EthereumKeyStorage.swift */,
+				E98F176C29D5AD4100FBFD0D /* Web3AuthClient.swift */,
+			);
+			path = Web3Auth;
+			sourceTree = "<group>";
+		};
+		E98F176D29D5AD4100FBFD0D /* Web3Client */ = {
+			isa = PBXGroup;
+			children = (
+				E98F176E29D5AD4100FBFD0D /* Web3ClientImpl.swift */,
+				E98F176F29D5AD4100FBFD0D /* Web3ClientError.swift */,
+			);
+			path = Web3Client;
+			sourceTree = "<group>";
+		};
+		E98F177029D5AD4100FBFD0D /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				E98F178429D5AD4100FBFD0D /* Web3ClientFunctionsImpl.swift */,
+				E98F177229D5AD4100FBFD0D /* Common */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		E98F177229D5AD4100FBFD0D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E98F177329D5AD4100FBFD0D /* Approve.swift */,
+				E98F177429D5AD4100FBFD0D /* ContractTransfer.swift */,
+				E98F177529D5AD4100FBFD0D /* TransferFrom.swift */,
+				E98F177629D5AD4100FBFD0D /* Allowance.swift */,
+				E98F177729D5AD4100FBFD0D /* Transfer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E98F178629D5AD4100FBFD0D /* Web3Execution */ = {
+			isa = PBXGroup;
+			children = (
+				E98F17B429D5B3B300FBFD0D /* Web3ClientConnectProtocol.swift */,
+				E98F179129D5AD4100FBFD0D /* Web3ClientWriteRepositoryProtocol.swift */,
+				E98F178729D5AD4100FBFD0D /* Web3ClientReadRepository.swift */,
+				E98F178829D5AD4100FBFD0D /* Web3Repo */,
+				E98F178B29D5AD4100FBFD0D /* WalletConnect */,
+			);
+			path = Web3Execution;
+			sourceTree = "<group>";
+		};
+		E98F178829D5AD4100FBFD0D /* Web3Repo */ = {
+			isa = PBXGroup;
+			children = (
+				E98F178929D5AD4100FBFD0D /* Web3Repository.swift */,
+				E98F178A29D5AD4100FBFD0D /* EthereumKeyStorage.swift */,
 			);
 			path = Web3Repo;
+			sourceTree = "<group>";
+		};
+		E98F178B29D5AD4100FBFD0D /* WalletConnect */ = {
+			isa = PBXGroup;
+			children = (
+				E98F178F29D5AD4100FBFD0D /* WalletConnectionRepository.swift */,
+				E98F178C29D5AD4100FBFD0D /* WalletModel.swift */,
+				E98F178D29D5AD4100FBFD0D /* WalletConnectionImpl.swift */,
+				E98F178E29D5AD4100FBFD0D /* WalletConnectError.swift */,
+				E98F179029D5AD4100FBFD0D /* WalletConnectionDelegate.swift */,
+			);
+			path = WalletConnect;
 			sourceTree = "<group>";
 		};
 		E9BD65AB2959BF8800D7C59E /* Frameworks */ = {
@@ -389,30 +432,6 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
-		E9D7AF0C295D7DCF003DB8CE /* WalletConnect */ = {
-			isa = PBXGroup;
-			children = (
-				E99A743E295F095400A440B2 /* WalletConnectionRepository.swift */,
-				E99A7438295EFF2D00A440B2 /* WalletConnectionImpl.swift */,
-				E99A743A295EFF3400A440B2 /* WalletConnectError.swift */,
-				E99A743C295EFF6200A440B2 /* WalletConnectionDelegate.swift */,
-				E99EF799296D75D90027F332 /* WalletModel.swift */,
-				E9FEE18929BB526A002A0F70 /* WalletConnectResult.swift */,
-			);
-			path = WalletConnect;
-			sourceTree = "<group>";
-		};
-		E9DAB3B829701E8100334663 /* Web3Client */ = {
-			isa = PBXGroup;
-			children = (
-				E933560A2993B97300781208 /* Transactions */,
-				E92633BF2982B9EE000F0B02 /* Web3ClientImpl.swift */,
-				E9DAB3B929701E9D00334663 /* Web3ClientTransactionImpl.swift */,
-				E92633BD2982A100000F0B02 /* Web3ClientError.swift */,
-			);
-			path = Web3Client;
-			sourceTree = "<group>";
-		};
 		E9F2EF7428FD3D81009604BF = {
 			isa = PBXGroup;
 			children = (
@@ -438,9 +457,9 @@
 				E9D3E0D229B9F45D00747B6D /* Utils */,
 				E9D3E0CD29B9F44900747B6D /* DI */,
 				E9F2EFB128FD650B009604BF /* AppDelegate */,
+				E98F176929D5AD4100FBFD0D /* Web3 */,
 				E9F2EFB328FD6536009604BF /* Modules */,
 				E96896D028FE918000048E5D /* Extensions */,
-				E9BAC9232980019B00FA6DBC /* Web3 */,
 				E9F2EFB528FD6568009604BF /* SupportingFiles */,
 				E9F2EFB028FD6498009604BF /* Resources */,
 			);
@@ -593,64 +612,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98F179529D5AD4100FBFD0D /* Web3ClientError.swift in Sources */,
 				E9F2EF8128FD3D82009604BF /* AppDelegate.swift in Sources */,
+				E98F179429D5AD4100FBFD0D /* Web3ClientImpl.swift in Sources */,
 				E9D3E0D129B9F44900747B6D /* RootComponent.swift in Sources */,
-				E98A98A929781A5A00A2893B /* TransferFrom.swift in Sources */,
 				E9F2EF8328FD3D82009604BF /* SceneDelegate.swift in Sources */,
-				E933560C2993BD1D00781208 /* EthereumKeyStorage.swift in Sources */,
+				E98F17AC29D5AD4100FBFD0D /* WalletModel.swift in Sources */,
 				E9D3E0DB29B9F47F00747B6D /* ConfigsImpl.swift in Sources */,
-				E98A98A729781A5200A2893B /* Allowance.swift in Sources */,
-				E9BAC922297FF11B00FA6DBC /* Web3AuthClient.swift in Sources */,
+				E98F179329D5AD4100FBFD0D /* Web3AuthClient.swift in Sources */,
+				E98F179929D5AD4100FBFD0D /* TransferFrom.swift in Sources */,
 				E9D3E0F629B9F63A00747B6D /* WindowImpl.swift in Sources */,
 				E9D3E0F529B9F63A00747B6D /* WindowProtocol.swift in Sources */,
 				E96896D828FE92E400048E5D /* CollectionsExtension.swift in Sources */,
-				E99A743B295EFF3400A440B2 /* WalletConnectError.swift in Sources */,
 				E96896D628FE92CD00048E5D /* CellsExtensions.swift in Sources */,
-				E9DAB3BC29701F4D00334663 /* Transfer.swift in Sources */,
 				E9D3E0D029B9F44900747B6D /* NeedleGenerated.swift in Sources */,
 				E9D3E0FB29B9F6E800747B6D /* UserDefaultsStorageImpl.swift in Sources */,
 				E99FF8F4292F6FA4007CCF14 /* StringExtension.swift in Sources */,
-				E9BAC926298001F300FA6DBC /* Web3Repository.swift in Sources */,
+				E98F17AB29D5AD4100FBFD0D /* EthereumKeyStorage.swift in Sources */,
 				E9D3E0DC29B9F47F00747B6D /* Configs.swift in Sources */,
 				E9D3E0DA29B9F47F00747B6D /* SecureStorageImpl.swift in Sources */,
 				E9D3E0E629B9F5E000747B6D /* BaseViewController.swift in Sources */,
-				E98A98A529781A4B00A2893B /* Approve.swift in Sources */,
-				E9BAC9282980033600FA6DBC /* Web3ClientConfig.swift in Sources */,
 				E9D3E0D929B9F47F00747B6D /* SecureStorage.swift in Sources */,
-				E99A7439295EFF2D00A440B2 /* WalletConnectionImpl.swift in Sources */,
 				E9D3E0EB29B9F5E000747B6D /* BaseViewInput.swift in Sources */,
-				E9EA2AEC299516E500E288D5 /* Web3ClientRepository.swift in Sources */,
-				E99A743D295EFF6200A440B2 /* WalletConnectionDelegate.swift in Sources */,
-				E92633C02982B9EE000F0B02 /* Web3ClientImpl.swift in Sources */,
-				E99A743F295F095400A440B2 /* WalletConnectionRepository.swift in Sources */,
 				E9D3E0E729B9F5E000747B6D /* BaseTableViewCell.swift in Sources */,
 				E9D3E0EA29B9F5E000747B6D /* BaseNavigationController.swift in Sources */,
 				E9D3E0F029B9F61300747B6D /* MainRouterImpl.swift in Sources */,
-				E92633BE2982A100000F0B02 /* Web3ClientError.swift in Sources */,
-				E99EF79A296D75D90027F332 /* WalletModel.swift in Sources */,
+				E98F17AE29D5AD4100FBFD0D /* WalletConnectError.swift in Sources */,
+				E98F17A929D5AD4100FBFD0D /* Web3ClientReadRepository.swift in Sources */,
+				E98F17AA29D5AD4100FBFD0D /* Web3Repository.swift in Sources */,
+				E98F17AF29D5AD4100FBFD0D /* WalletConnectionRepository.swift in Sources */,
 				48E1484648671D7E4CACB75D /* DebuggingViewInput.swift in Sources */,
-				E9FEE18A29BB526A002A0F70 /* WalletConnectResult.swift in Sources */,
 				FF81DCE3A4C580D034A7C2DC /* DebuggingViewOutput.swift in Sources */,
+				E98F17B029D5AD4100FBFD0D /* WalletConnectionDelegate.swift in Sources */,
+				E98F17A829D5AD4100FBFD0D /* Web3RepoFactory.swift in Sources */,
 				2302C23400C93977FD4AC3E0 /* DebuggingViewController.swift in Sources */,
 				5F641FF9DBEC7CFA62CB8190 /* DebuggingViewModel.swift in Sources */,
+				E98F17B329D5AE6400FBFD0D /* TorusWeb3Utils.swift in Sources */,
+				E98F17A729D5AD4100FBFD0D /* Web3ClientFunctionsImpl.swift in Sources */,
 				E9D3E0FA29B9F6E800747B6D /* UserDefaultsStorage.swift in Sources */,
+				E98F179829D5AD4100FBFD0D /* ContractTransfer.swift in Sources */,
 				6333AA8AED48A837E74AF682 /* DebuggingViewManager.swift in Sources */,
 				36E794CA7A8FD6181123CA5D /* DebuggingViewManagerCell.swift in Sources */,
 				E9D3E0E929B9F5E000747B6D /* BaseConfigureProtocol.swift in Sources */,
+				E98F179229D5AD4100FBFD0D /* Web3ClientConfig.swift in Sources */,
 				D5BBAC54819F6792BDFAF5DA /* DebuggingViewManagerOutput.swift in Sources */,
 				59AEBB52F1F17EC4D7A775F2 /* DebuggingModuleInput.swift in Sources */,
+				E98F179B29D5AD4100FBFD0D /* Transfer.swift in Sources */,
+				E98F17B529D5B3B300FBFD0D /* Web3ClientConnectProtocol.swift in Sources */,
 				82F9C91032A55F1BD7E08D0E /* DebuggingPresenter.swift in Sources */,
-				E9EA2AEE299518CB00E288D5 /* Web3RepoFactory.swift in Sources */,
+				E98F17B129D5AD4100FBFD0D /* Web3ClientWriteRepositoryProtocol.swift in Sources */,
 				1FF7310D159278438378DAF0 /* DebuggingInteractor.swift in Sources */,
+				E98F179A29D5AD4100FBFD0D /* Allowance.swift in Sources */,
 				1CA26DA69573EFB1F2B1EEDC /* DebuggingInteractorInputOutput.swift in Sources */,
+				E98F17AD29D5AD4100FBFD0D /* WalletConnectionImpl.swift in Sources */,
 				A1740977BD825B09C3F78AC3 /* DebuggingRouterInput.swift in Sources */,
 				DA942D6B73A5ACD3CA0324F7 /* DebuggingRouter.swift in Sources */,
 				46FB74E0CD23D0FA9295BC1D /* DebuggingConfigurator.swift in Sources */,
 				D5BE3D4FBC85015B0BC8DB83 /* DebuggingProtocol.swift in Sources */,
-				E9DAB3BA29701E9D00334663 /* Web3ClientTransactionImpl.swift in Sources */,
-				E937815229757CE200961CB6 /* ContractTransfer.swift in Sources */,
-				E96E48852987D5290037F9CB /* TorusWeb3Utils.swift in Sources */,
 				E9D3E0F129B9F61300747B6D /* MainRouter.swift in Sources */,
+				E98F179729D5AD4100FBFD0D /* Approve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@ import Foundation
 import web3
 import BigInt
 
-protocol Web3ClientTransaction {
+protocol Web3ClientFunctions {
     func transfer(from: String, to: String, value: BigUInt, gasPrice: BigUInt?, gasLimit: BigUInt?) throws -> EthereumTransaction
     func contractTransfer(from: String, to: String, contract: String, value: BigUInt, gasPrice: BigUInt?, gasLimit: BigUInt?) throws -> EthereumTransaction
     func approveTransaction(from: String, to: String, contract: String, value: BigUInt, gasPrice: BigUInt?, gasLimit: BigUInt?) throws -> EthereumTransaction
@@ -10,7 +10,7 @@ protocol Web3ClientTransaction {
     func transferFromTransaction(from: String, sender: String, recipient: String, contract: String, value: BigUInt, gasPrice: BigUInt?, gasLimit: BigUInt?) throws -> EthereumTransaction
 }
 
-struct Web3ClientTransactionImpl: Web3ClientTransaction {
+struct Web3ClientFunctionsImpl: Web3ClientFunctions {
     public func transfer(from: String, to: String, value: BigUInt, gasPrice: BigUInt?, gasLimit: BigUInt?) throws -> EthereumTransaction {
         let function = Transfer(from: EthereumAddress(from), contract: EthereumAddress(to), value: value, gasPrice: gasPrice, gasLimit: gasLimit)
         return try function.transaction(value: value, gasPrice: gasPrice, gasLimit: gasLimit)

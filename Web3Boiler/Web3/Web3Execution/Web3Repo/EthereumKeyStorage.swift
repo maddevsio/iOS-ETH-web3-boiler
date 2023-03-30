@@ -2,11 +2,13 @@ import Foundation
 import web3
 
 protocol EthKeyStorage: EthereumKeyStorageProtocol {
+    var secureStorage: SecureStorage { get }
+    
     func getPrivateKey() -> Data?
 }
 
 class EthereumKeyStorage: EthKeyStorage {
-    private let secureStorage: SecureStorage
+    var secureStorage: SecureStorage
     
     init(_ secureStorage: SecureStorage) {
         self.secureStorage = secureStorage

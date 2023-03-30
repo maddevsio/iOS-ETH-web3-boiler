@@ -8,6 +8,7 @@ extension Module {
     public enum DebuggingActions: Int, CaseIterable {
         case walletConnect,
              web3Account,
+             logout,
              getGasPrice,
              getBalanceCurrentAddress,
              signTransaction,
@@ -22,6 +23,8 @@ extension Module {
                 return "Wallet connect MetaMask"
             case .web3Account:
                 return "Web3Auth google account"
+            case .logout:
+                return "Logout"
             case .getGasPrice:
                 return "Get gas price"
             case .getBalanceCurrentAddress:

@@ -7,7 +7,7 @@ public struct TransferFrom: ABIFunction {
     public var gasPrice: BigUInt? = nil
     public var gasLimit: BigUInt? = nil
     public var contract: EthereumAddress
-    public let from: EthereumAddress? // Should be same as sender
+    public let from: EthereumAddress? // From should be the same sender address
     public let sender: EthereumAddress
     public let recipient: EthereumAddress
     public let value: BigUInt

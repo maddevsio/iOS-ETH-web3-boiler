@@ -21,6 +21,8 @@ extension Module {
                 interactor.connectToWallet()
             case .web3Account:
                 interactor.web3AccountConnect()
+            case .logout:
+                interactor.logout()
             case .getGasPrice:
                 interactor.getGasPrice()
             case .getBalanceCurrentAddress:

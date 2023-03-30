@@ -14,6 +14,9 @@ public enum ConfigsUrl: String {
     case projURL = "PROJ_URL"
     case bridgeTestURL = "BRIDGE_TEST_URL"
     case goerliURL = "GOERLI_URL"
+    case ethereumURL = "ETHEREUM_URL"
+    case polygonURL = "POLYGON_URL"
+    case sepoliaURL = "SEPOLIA_URL"
 }
 
 public enum ConfigsKey: String {
