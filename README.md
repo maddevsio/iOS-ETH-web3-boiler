@@ -47,10 +47,10 @@ This project is an example of set frameworks implementations that may help you t
 - Get gasPrice
 - Get account balance
 - Make Transfer with Goerli ETH token
-- Make Transfer with Goerli USDC stablecoin via SmartContract
-- Make Approve with Goerli USDC stablecoin via SmartContract
-- Make Allowance with Goerli USDC stablecoin via SmartContract
-- Make Transfer from with Goerli USDC stablecoin via SmartContract
+- Make Transfer with Goerli USDC via smart contract
+- Make Approve with Goerli USDC via smart contract
+- Make Allowance with Goerli USDC via smart contract
+- Make Transfer from with Goerli USDC via smart contract
 
 [More info about types of transaction](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20)
 
