@@ -62,8 +62,15 @@ This project is an example of set frameworks implementations that may help you t
 - [Goerli Etherscan](https://goerli.etherscan.io/), set account address or hash of transaction
 - Into the alchemy profile.
 
+### Networks
+- Goerli
+- Ethereum
+- Polygon
+- Sepolia
+
 ### Build project recomendations
 - DebuggingInteractor fill addresses
 - Setup personal developer account into the Signing & Capabilities
 - Install Metamask on your device and Sign in
 - Run project on personal device
+- If you using not a goerli network, you should update USDC contract address into the Constants

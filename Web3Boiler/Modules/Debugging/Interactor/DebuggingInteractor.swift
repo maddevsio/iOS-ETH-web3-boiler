@@ -3,7 +3,8 @@ private typealias Module = Debugging
 extension Module {
     final class Interactor: InteractorInput {
         enum Constants {
-            static let contractUSDC = "0x07865c6E87B9F70255377e024ace6630C1Eaa37F"
+            static let contractUSDC = "0x07865c6E87B9F70255377e024ace6630C1Eaa37F" // Contacrt address goerli usdc
+            static let network: Web3ClientConfig = .goerli
         }
         
         weak var output: InteractorOutput!
@@ -19,7 +20,7 @@ extension Module {
             web3Repo = nil
             web3Repo = web3RepoFactory.build(.walletConnect)
             let metamask = Web3RepoType.walletConnect.wallets.first(where: { $0 == .metamask })?.link ?? ""
-            web3Repo?.connect(WalletModel(walletLink: metamask, appStoreUrl: ""), web3Config: .goerli, completion: { result in
+            web3Repo?.connect(WalletModel(walletLink: metamask, appStoreUrl: ""), web3Config: Constants.network, completion: { result in
                 print("connectToWallet result \(result)")
             })
         }
@@ -27,7 +28,7 @@ extension Module {
         func web3AccountConnect() {
             web3Repo = nil
             web3Repo = web3RepoFactory.build(.personalAccount)
-            web3Repo?.login(.GOOGLE, web3Config: .goerli) { result in
+            web3Repo?.login(.GOOGLE, web3Config: Constants.network) { result in
                 print("web3AccountConnect result \(result)")
             }
         }
@@ -80,7 +81,6 @@ extension Module {
         
         func signContractTransfer() {
             // Fill address to
-            // Contacrt address goerli usdc
             Task {
                 do {
                     let result = try await web3Repo?.transferWithContract(to: "",
@@ -95,7 +95,6 @@ extension Module {
         
         func approveTransaction() {
             // Fill address to
-            // Contacrt address goerli usdc
             Task {
                 do {
                     let result = try await web3Repo?.approve(to: "",
@@ -110,7 +109,6 @@ extension Module {
         
         func allowanceTransaction() {
             // Fill address owner (from address), sender (to address)
-            // Contacrt address goerli usdc
             Task {
                 do {
                     let balance = try await web3Repo?.allowance(owner: "",
@@ -126,7 +124,6 @@ extension Module {
         func transferFromTransaction() {
             // Fill address sender (to address)
             // Fill address recipient (any address)
-            // Contacrt address goerli usdc
             Task {
                 do {
                     let result = try await web3Repo?.transferFrom(sender: "",
