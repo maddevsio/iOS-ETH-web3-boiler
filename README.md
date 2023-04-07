@@ -1,4 +1,5 @@
 # Web3Boiler iOS
+[![Developed by Mad Devs](https://maddevs.io/badge-dark.svg)](https://maddevs.io?utm_source=github&utm_medium=madboiler)
 
 ## Description
 This project is an example of set frameworks implementations that may help you to communicate with the Ethereum blockchain.
