@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE.md)
 
 ## Description
-This project is an example of set frameworks implementations that may help you to communicate with the Ethereum blockchain.
+This project is an example of set frameworks implementations that may help you to interact with the Ethereum blockchain.
 
 ## Requirements
 - iOS 14.0+
